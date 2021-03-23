@@ -4,6 +4,9 @@ a{text-decoration: none;}
 .container{
     font-family: 'Noto Sans KR', sans-serif;
 }
+html,body{
+    overflow-x: hidden;
+}
 /*//ALL*/
 
 /*COMMON*/
@@ -31,6 +34,7 @@ a{text-decoration: none;}
     font-weight: 400;
     color: #fff;
     background: url(../img/sam_03_re.jpeg);
+    background-size: cover;
     background-attachment: fixed;
 }
 .section{
@@ -106,6 +110,21 @@ a{text-decoration: none;}
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+}
+.top_btn{
+    color: #fff;
+    z-index: 99999;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
 }
 /*//BTN*/
 
@@ -361,3 +380,108 @@ footer .inner .footer_about{
     font-weight: 300;
 }
 /*//FOOTER*/
+
+/*PHONE*/
+@media screen and (min-width: 320px) and (max-width: 760px){
+    .main_menu{
+        position: static;
+    }
+    .main_menu li a{
+        font-size: 18px;
+        padding: 20px;
+    }
+    
+    /*BTN*/
+    .btn{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    /*TEXT*/
+    .visual_section01 .inner h2{
+        font-size: 18px;
+    }
+    .title_text{
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .sub_title_text{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .description_text{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .small_text{
+        font-size: 16px;
+    }
+    
+    /*SKILL*/
+    .visual_section02 .tiles .inner ul li{
+        width: 100%;
+        border-bottom: 3px solid rgba(0,0,0,.05);
+    }
+    .visual_section02 .tiles .inner ul li:last-child{
+        border: none;
+    }
+    
+    /*WORK*/
+    .visual_section03 .works{
+        display: block;
+        text-align: center;
+    }
+    .visual_section03 .works img{
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        border-radius: 10px;
+    }
+    .visual_section03 .works .works_l{
+        float: none;
+        display: inline-block;
+    }
+    .visual_section03 .works .works_r{
+        float: none;
+        display: inline-block;
+    }
+    .visual_section03 .works .caption_text{
+        font-size: 14px;
+        display: block;
+        padding: 10px 10px 10px 10px;
+    }
+    .visual_section03 .works .palette{
+        display: inline-flex;
+        padding-bottom: 10px;
+    }
+    
+    .visual_section03 .works .art_box ul{
+        display: block;
+        text-align: center;
+    }
+    .visual_section03 .works .art_box ul li:nth-child(2n-1){
+        display: inline-block;
+        margin: 20px auto;
+    }
+    .visual_section03 .works .art_box ul li:nth-child(2n){
+        display: inline-block;
+        margin: 20px auto;
+    }
+    .visual_section03 .works .art_box ul li .text{
+        border-radius: 10px;
+    }
+    
+    /*CONTECT*/
+    .visual_section04 .inner ul li{
+        width: 100%;
+        border-bottom: 3px solid rgba(0,0,0,.05);
+    }
+    .visual_section04 .inner ul li:last-child{
+        border: none;
+    }
+    
+    /*TOPBTN*/
+    .top_btn{
+        display: block;
+    }
+}
